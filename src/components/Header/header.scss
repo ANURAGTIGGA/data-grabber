@@ -1,0 +1,24 @@
+@import '../../common/styles/theme';
+
+header{
+    -webkit-box-shadow: 0px 1px 5px 2px rgba(183,211,237,1);
+    -moz-box-shadow: 0px 1px 5px 2px rgba(183,211,237,1);
+    box-shadow: 0px 1px 5px 2px rgba(183,211,237,1);
+    background-color: $secondary-color;
+    .tabs-wrap{
+        display: flex;
+        justify-content: flex-end;
+        width: 650px;
+        margin: 0 auto;
+        .tabs{
+            padding: 15px;
+            cursor: pointer;
+            border: 0;
+            background-color: $secondary-color;
+            &.active{
+                background-color: $primary-color;
+                //color: white;
+            }
+        }
+    }
+}

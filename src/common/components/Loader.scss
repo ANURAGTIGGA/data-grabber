@@ -1,0 +1,29 @@
+.list-loader p {
+    height: 25px;
+    animation: custom-loading 1s linear infinite alternate;
+    opacity: 0.7;
+    border-radius: 3px;
+}
+
+.grid-loader {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    p {
+        height: 150px;
+        animation: custom-loading 1s linear infinite alternate;
+        opacity: 0.7;
+        border-radius: 3px;
+        flex-basis: 200px;
+        flex-grow: 1;
+    }
+}
+
+@keyframes custom-loading {
+    0% {
+      background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }

@@ -1,0 +1,37 @@
+@import '../../common/styles/theme';
+
+.output-container{
+    padding: 0 15px;
+    .scrollable-container{
+        max-height: calc(100vH - 350px);
+        overflow-y: scroll;
+        position: relative;
+    }
+    .toggle-view{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            padding: 5px;
+            background-color: $secondary-color;
+            color: white;
+            cursor: pointer;
+            border: 1px solid $primary-color;
+            &.active{
+                background-color: $primary-color;
+            }
+            span{
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                vertical-align: middle;
+                background-size: contain;
+                &.list{
+                    background-image: url('../../common/assets/list.png');
+                }
+                &.grid{
+                    background-image: url('../../common/assets/visualization.png');
+                }
+            }
+        }
+    }
+}

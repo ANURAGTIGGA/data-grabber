@@ -1,0 +1,27 @@
+@import '../styles/theme.scss';
+
+.card-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .card{
+        padding: 15px;
+        border: 1px solid $primary-color;
+        border-radius: 3px;
+        flex-basis: 200px;
+        flex-grow: 1;
+        .card-content{
+            &.name{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .title{
+                font-size: 14px;
+                font-style: italic;
+            }
+            .company{
+                font-size: 16px;
+            }
+        }
+    }
+}

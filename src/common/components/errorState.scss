@@ -1,0 +1,12 @@
+@import '../styles/theme.scss';
+
+.error-wrap{
+    height: 300px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    border-radius: 5px;
+}

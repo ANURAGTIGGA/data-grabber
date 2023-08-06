@@ -1,0 +1,23 @@
+@import '../styles/theme.scss';
+
+.list-view{
+    .row-header,.row-wrap{
+        display: flex;
+        justify-content: flex-start;
+        background-color: $secondary-color;
+        padding: 10px;
+        .row-content{
+            flex: 1;
+        }
+    }
+    .row-header{
+        background-color: $primary-color;
+        position: fixed;
+        width: calc(100vW - 50px);
+    }
+    .row-wrap{
+        &:nth-child(2n) {
+            background-color: #ffffff;
+        }
+    }
+}
