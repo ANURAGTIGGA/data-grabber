@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import QueryContainer from './components/QueryContainer/QueryContainer.jsx';
 
-
 function App() {
   const [isCustomQuery, setIsCustomQuery] = useState(true)
 

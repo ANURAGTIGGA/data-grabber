@@ -24,7 +24,7 @@
         button{
             padding: 10px;
             border: 0;
-            background-color: darkseagreen;
+            background-color: $btn-color;
             color: white;
             margin: 0 5px;
             cursor: pointer;
@@ -51,7 +51,7 @@
             button{
                 padding: 10px;
                 border: 0;
-                background-color: darkseagreen;
+                background-color: $btn-color;
                 color: white;
                 cursor: pointer;
             }

@@ -10,9 +10,10 @@ export default function fetchData(query) {
         result = customers
     }
 
+    // mimicking an async behaviour
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
             resolve(result);
-        },2000)
+        },1500)
     })
 }
