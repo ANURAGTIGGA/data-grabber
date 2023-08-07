@@ -11,15 +11,18 @@ Atlan Assignment
 
 3. The JavaScript framework you chose, along with any major plugins or packages you installed.
 
-    framework/library used
-        React JS
-    major packages used
+    framework/library used is
+
+       React JS
+       
+    major packages used is
+   
         react-infinite-scroll-component - for lazy loading of data
 
-4. The page load time of your application, and how you measured this time.
+5. The page load time of your application, and how you measured this time.
 
 
-5. Any optimisations you did to decrease the load time or increase performance.
+6. Any optimisations you did to decrease the load time or increase performance.
 
     performance - 
     Rendering of large list of data can freeze/block the UI and reduce performance.
