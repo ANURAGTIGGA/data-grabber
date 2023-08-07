@@ -21,9 +21,17 @@ Atlan Assignment
 
 5. The page load time of your application, and how you measured this time.
 
+   First Contentful Paint
+   
+       0.5 s
 
-6. Any optimisations you did to decrease the load time or increase performance.
+    Checked in page speed insight :
+   
+       https://pagespeed.web.dev/analysis/https-data-grabber-netlify-app/ap4n9bx7fh?form_factor=desktop
 
-    performance - 
+7. Any optimisations you did to decrease the load time or increase performance.
+
+    Performance -
+   
     Rendering of large list of data can freeze/block the UI and reduce performance.
     I limited the rendering of data at once by implemented lazy loading by making use of react-infinite-scroll-component
