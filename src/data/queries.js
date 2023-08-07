@@ -17,10 +17,10 @@ const preDefinedQueries = [
     },
     {
         id: 3,
-        query : "select * from customers where title == 'Order Administrator'",
+        query : "select * from customers where country == 'Germany'",
         condition: {
-            key: "contactTitle",
-            value: "Order Administrator"
+            key: "address.country",
+            value: "Germany"
         }
     }
 ]

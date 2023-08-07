@@ -4,7 +4,12 @@ export default function fetchData(query) {
     let result;
     if(query) {
         result = customers.filter((item)=>{
-            return item[query.key] === query.value
+            let res = ''
+            const list = query.key.split('.')
+            list.forEach((key)=>{
+                res = res ? res[key] : item[key]
+            })
+            return res === query.value
         })
     } else {
         result = customers

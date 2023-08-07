@@ -2,7 +2,7 @@ import {useState} from 'react';
 import InputContainer from '../InputContainer/InputContainer.jsx';
 import OutputContainer from '../OutputContainer/OutputContainer.jsx';
 import './queryContainer.scss';
-import fetchData from '../../utils/fetchData.js'
+import fetchData from '../../utils/fetchData.js';
 
 export default function QueryContainer({isCustomQuery}){
     const [data, setData] = useState([]);
