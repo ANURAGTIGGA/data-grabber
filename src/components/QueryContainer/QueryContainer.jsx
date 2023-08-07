@@ -7,18 +7,25 @@ import fetchData from '../../utils/fetchData.js';
 export default function QueryContainer({isCustomQuery}){
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState('empty');
 
     async function getData(query){
-        setIsLoading(true)
-        const result = await fetchData(query)
-        setData(result);
-        setIsLoading(false)
+        try{
+            setIsLoading(true)
+            const result = await fetchData(query)
+            setData(result);
+        } catch(err){
+            setData([]);
+            setError('failed')
+        } finally{
+            setIsLoading(false)
+        }
     }
 
     return (
         <div className="query-container">
             <InputContainer onQueryRun={getData} isCustomQuery={isCustomQuery}></InputContainer>
-            <OutputContainer data={data} isLoading={isLoading}></OutputContainer>
+            <OutputContainer data={data} isLoading={isLoading} errorType={error}></OutputContainer>
         </div>
     )
 }

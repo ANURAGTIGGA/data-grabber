@@ -9,4 +9,18 @@
     align-items: center;
     background-color: $secondary-color;
     border-radius: 5px;
+    span{
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        vertical-align: middle;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &.empty{
+            background-image: url('../../common/assets/folder.png');
+        }
+        &.failed{
+            background-image: url('../../common/assets/errors.png');
+        }
+    }
 }

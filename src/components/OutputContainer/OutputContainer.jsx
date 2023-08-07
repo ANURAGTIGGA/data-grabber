@@ -6,7 +6,7 @@ import Loader from '../../common/components/Loader.jsx';
 import './outputContainer.scss';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
-export default function OutputContainer({data, isLoading, loadMore}){
+export default function OutputContainer({data, isLoading, loadMore, errorType}){
     const noPerPage = 10;
     const [isListType, setIsListType] = useState(true);
     const [visibleData, setVisibleData] = useState([]);
@@ -59,7 +59,7 @@ export default function OutputContainer({data, isLoading, loadMore}){
             {
                 isLoading ? <Loader isLoading={isLoading} loaderType={isListType ? 'list' : 'grid'}></Loader> : (
                     data.length > 0 ? (isListType ? <ListView data={visibleData}></ListView> : <GridView data={visibleData}></GridView>) :
-                        <ErrorState errorType="empty"></ErrorState>
+                        <ErrorState errorType={errorType}></ErrorState>
                 )
             }
             </InfiniteScroll>
