@@ -1,4 +1,4 @@
-Atlan Assignment
+Assignment
 
 1. A basic overview of your project.
 
